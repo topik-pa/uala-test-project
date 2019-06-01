@@ -8,7 +8,7 @@ const selectedStyle = {
 const Menu = () => {
     return (
         <nav className="main-menu">
-            <NavLink to="/">
+            <NavLink exact to="/" activeStyle={selectedStyle}>
                 App
             </NavLink>
             <NavLink to="/about" activeStyle={selectedStyle}>
@@ -18,4 +18,4 @@ const Menu = () => {
     )    
 }
 
-export default Menu;
+export default Menu

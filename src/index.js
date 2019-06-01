@@ -20,7 +20,7 @@ render(
         <div className="main">
             <Switch>
                 <Route exact path="/" component={App} />
-                <Route exact path="/about" component={About} />
+                <Route path="/about" component={About} />
                 <Route component={NotFound404} />
             </Switch>
         </div>        

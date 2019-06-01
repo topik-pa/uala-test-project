@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { addColor } from '../actions'
+import { addColor } from '../../actions'
 
 const AddColorForm = (props, {store}) => {
     let title, color
     const submit = e => {
         e.preventDefault();
-        //onNewColor(_title.value, _color.value)
         store.dispatch(addColor(title.value, color.value))
         title.value = ''
         color.value = '#000000'

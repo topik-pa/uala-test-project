@@ -3,12 +3,12 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { createStore, combineReducers } from 'redux'
-import { colors, sort } from '../../reducers'
+import { colors, sort } from '../../utils'
 
-import PageTemplate from '../shared/PageTemplate';
+import PageTemplate from '../PageTemplate/PageTemplate';
 
-import AddColorForm from './AddColorForm';
-import ColorList from './ColorList';
+import AddColorForm from './AddColorForm/AddColorForm';
+import ColorList from './ColorList/ColorList';
 
 
 class App extends Component {

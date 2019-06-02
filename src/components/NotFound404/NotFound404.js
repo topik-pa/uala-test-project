@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
-import PageTemplate from './shared/PageTemplate';
+import PageTemplate from '../PageTemplate/PageTemplate';
 
 const NotFound404 = ({location}) => 
     <PageTemplate>

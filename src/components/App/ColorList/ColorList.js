@@ -1,7 +1,7 @@
 import React from 'react';
-import Color from './Color';
+import Color from './Color/Color';
 import PropTypes from 'prop-types';
-import { removeColor, rateColor } from '../../actions'
+import { removeColor, rateColor } from '../../../utils'
 
 const ColorList = ({ colors=[] }, {store} ) => {
     return (

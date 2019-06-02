@@ -1,8 +1,8 @@
-import C from './constants'
+import { CONSTANTS } from './constants'
 
 export const color = (state = {}, action) => {
     switch (action.type) {
-        case C.ADD_COLOR:
+        case CONSTANTS.ADD_COLOR:
             return {
                 id: action.id,
                 title: action.title,
@@ -10,7 +10,7 @@ export const color = (state = {}, action) => {
                 timestamp: action.timestamp,
                 rating: 0
             }
-        case C.RATE_COLOR:
+        case CONSTANTS.RATE_COLOR:
             return (state.id !== action.id) ?
             state : 
             {

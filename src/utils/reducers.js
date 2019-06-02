@@ -1,18 +1,18 @@
-import C from './constants'
+import { CONSTANTS } from './constants'
 import { color } from './color'
 
 export const colors = (state = [], action) => {
     switch (action.type) {
-        case C.ADD_COLOR:
+        case CONSTANTS.ADD_COLOR:
             return [
                 ...state,
                 color({}, action)
             ]
-        case C.RATE_COLOR:
+        case CONSTANTS.RATE_COLOR:
             return state.map(
                 c => color(c, action)
             )
-        case C.REMOVE_COLOR:
+        case CONSTANTS.REMOVE_COLOR:
             return state.filter(
                 c => c.id !== action.id
             )
@@ -23,7 +23,7 @@ export const colors = (state = [], action) => {
 
 export const sort = (state = "SORTED_BY_DATE", action) => {
     switch (action.type) {
-        case C.SORT_COLOR:
+        case CONSTANTS.SORT_COLOR:
             return action.sortBy
         default:
             return state

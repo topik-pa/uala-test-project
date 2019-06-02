@@ -1,5 +1,5 @@
 import React from 'react';
-import StarRating from './StarRating';
+import StarRating from './StarRating/StarRating';
 
 const Color = ({ title, color, rating=0, onRemove=f=>f, onRate=f=>f}) => {
     return(

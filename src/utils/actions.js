@@ -1,22 +1,22 @@
-import C from './constants'
+import {  CONSTANTS } from './constants'
 import { v4 } from 'uuid';
 
 export const removeColor = id =>
 ({
-    type: C.REMOVE_COLOR,
+    type: CONSTANTS.REMOVE_COLOR,
     id
 })
 
 export const rateColor = (id, rating) =>
 ({
-    type: C.RATE_COLOR,
+    type: CONSTANTS.RATE_COLOR,
     id,
     rating
 })
 
 export const addColor = (title, color) =>
 ({
-    type: C.ADD_COLOR,
+    type: CONSTANTS.ADD_COLOR,
     id: v4(),
     title,
     color,

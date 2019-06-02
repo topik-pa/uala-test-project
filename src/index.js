@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './index.css';
-import App from './components/app/App';
-import About from './components/About';
-import NotFound404 from './components/NotFound404';
+import App from './components/App/App';
+import About from './components/About/About';
+import NotFound404 from './components/NotFound404/NotFound404';
 import {
     HashRouter,
     Route,

@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import fetch from 'isomorphic-fetch'
 
-import PageTemplate from './shared/PageTemplate';
+import PageTemplate from '../PageTemplate/PageTemplate'
 
 
 
